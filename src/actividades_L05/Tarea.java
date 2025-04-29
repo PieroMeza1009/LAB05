@@ -9,5 +9,14 @@ public class Tarea {
         this.prioridad = prioridad;
 
     }
+    public String getTitulo(){
+        return titulo;
+    }
+
+    public int getPrioridad(){
+        return prioridad;
+    }
+
+    public void set
     
 }
