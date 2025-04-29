@@ -17,6 +17,16 @@ public class Tarea {
         return prioridad;
     }
 
-    public void set
+    public void setTitulo(){
+        this.titulo = titulo;
+    }
+    public void setPrioridad(){
+        this.prioridad =prioridad;
+    }
+
+    public String toString(){
+        return this.titulo + " : " + this.prioridad;
+    }
+    
     
 }
