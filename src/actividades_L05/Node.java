@@ -9,9 +9,20 @@ public class Node<T> {
         this.data = data;
         this.siguiente = siguiente;
     }
-    
+
     public T getData(){
         return data;
     }
 
+    public void setData(T data){
+        this.data = data;
+    }
+
+    public Node<T> getSiguiente(){
+        return siguiente;
+    }
+
+    public void setPrioridad(Node<T> siguiente){
+        this.siguiente = siguiente;
+    }
 }
