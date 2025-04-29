@@ -14,12 +14,12 @@ public class Node<T> {
         return data;
     }
 
-    public void setData(T data){
-        this.data = data;
-    }
-
     public Node<T> getSiguiente(){
         return siguiente;
+    }
+
+    public void setData(T data){
+        this.data = data;
     }
 
     public void setPrioridad(Node<T> siguiente){
