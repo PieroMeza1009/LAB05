@@ -12,6 +12,11 @@ public class main {
 
         System.out.println("Tareas pendientes:");
         pendientes.imprimirTareas();
+
+        Tarea tareaTerminada = new Tarea("Limpiar el cuarto", 2);
+        if (pendientes.eliminarTarea(tareaTerminada)) {
+            completadas.agregarTareaCompletada(tareaTerminada);
+        }
     }
 
 }
