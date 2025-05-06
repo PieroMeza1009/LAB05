@@ -77,5 +77,6 @@ public class GestordeTareas {
             }
             actual = actual.getSiguiente();
         }
+        return (T) masPrioritaria;
     }
     
