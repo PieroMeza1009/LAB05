@@ -9,5 +9,7 @@ public class Los_6Metodos {
             if (actual.getData().equals(valor)) return true;
             actual = actual.getSiguiente();
         }
+        return false;
+    
     }
 }
