@@ -4,8 +4,8 @@ public class Tarea {
     private String titulo;
     private int prioridad;
 
-    public Tarea(String titulo, int prioridad){
-        this.titulo = titulo;
+    public Tarea(String tarea, int prioridad){
+        this.titulo = tarea;
         this.prioridad = prioridad;
 
     }
@@ -17,10 +17,10 @@ public class Tarea {
         return prioridad;
     }
 
-    public void setTitulo(){
+    public void setTitulo(String titulo){
         this.titulo = titulo;
     }
-    public void setPrioridad(){
+    public void setPrioridad(int prioridad){
         this.prioridad =prioridad;
     }
 
