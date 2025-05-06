@@ -9,6 +9,9 @@ public class main {
         pendientes.agregarTarea(new Tarea("Estudiar para el examen", 5));
         pendientes.agregarTarea(new Tarea("Limpiar el cuarto", 2));
         pendientes.agregarTarea(new Tarea("Hacer tarea de AED", 4));
+
+        System.out.println("Tareas pendientes:");
+        pendientes.imprimirTareas();
     }
 
 }
