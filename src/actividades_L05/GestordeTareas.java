@@ -27,4 +27,12 @@ public class GestordeTareas {
         while (actual.getSiguiente() != null && !actual.getSiguiente().getData().equals(tarea)) {
             actual = actual.getSiguiente();
         }
+
+        if (actual.getSiguiente() != null) {
+            actual.setPrioridad(actual.getSiguiente().getSiguiente());
+            return true;
+        }
+
+        return false;
+    
     }
