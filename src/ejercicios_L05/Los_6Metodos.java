@@ -57,6 +57,9 @@ public class Los_6Metodos {
             if (!lista1.getData().equals(lista2.getData())) {
                 return false;
             }
+            lista1 = lista1.getSiguiente();
+            lista2 = lista2.getSiguiente();
+        }
 
     }
 }
