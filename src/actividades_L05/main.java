@@ -24,6 +24,12 @@ public class main {
 
         System.out.println("\nTareas completadas:");
         completadas.imprimirTareasCompletadas();
+
+        System.out.println("\nTarea más prioritaria:");
+        Tarea masImportante = pendientes.obtenerTareaMasPrioritaria();
+        System.out.println(masImportante);
     }
+
+    
 
 }
