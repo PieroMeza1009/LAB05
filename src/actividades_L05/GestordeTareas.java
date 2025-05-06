@@ -36,3 +36,5 @@ public class GestordeTareas {
         return false;
     
     }
+    public boolean contieneTarea(T tarea) {
+        Node<T> actual = cabeza;
