@@ -48,4 +48,7 @@ public class Los_6Metodos {
         while (actual != null) {
             contador++;
             actual = actual.getSiguiente();
+        }
+        return contador;
+    }
 }
