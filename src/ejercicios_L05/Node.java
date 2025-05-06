@@ -17,4 +17,12 @@ public class Node {
         return siguiente;
     }
 
+    public void setData(T data) {
+        this.data = data;
+    }
+
+    public void setSiguiente(Node<T> siguiente) {
+        this.siguiente = siguiente;
+    }
 }
+
