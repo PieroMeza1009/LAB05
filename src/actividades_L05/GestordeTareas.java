@@ -72,5 +72,10 @@ public class GestordeTareas {
 
         while (actual != null) {
             Tarea tareaActual = (Tarea) actual.getData();
+            if (tareaActual.getPrioridad() < masPrioritaria.getPrioridad()) {
+                masPrioritaria = tareaActual;
+            }
+            actual = actual.getSiguiente();
+        }
     }
     
