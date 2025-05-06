@@ -1,5 +1,9 @@
 package actividades_L05;
 
+import java.util.LinkedList;
+import java.util.List;
+
+
 public class main {
     public static void main(String[] args) {
 
