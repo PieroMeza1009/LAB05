@@ -32,6 +32,9 @@ public class MainEjercicios {
         Node<Integer> listaC = new Node<>(1, new Node<>(4, null));
         System.out.println("listaA y listaB iguales: " + Los_6Metodos.sonIguales(listaA, listaB));
         System.out.println("listaA y listaC iguales: " + Los_6Metodos.sonIguales(listaA, listaC));
+
+        /// 6. Concatenar dos listas
+        Node<String> listaX = new Node<>("Hola", null);
         
 
 
