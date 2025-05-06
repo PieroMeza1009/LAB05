@@ -17,4 +17,8 @@ public class Los_6Metodos {
     public static <T> Node<T> invertirLista(Node<T> cabeza) {
         Node<T> anterior = null;
         Node<T> actual = cabeza;
+
+        while (actual != null) {
+            Node<T> siguiente = actual.getSiguiente();
+            actual.setSiguiente(anterior);
 }
