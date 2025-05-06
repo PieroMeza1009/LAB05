@@ -78,5 +78,9 @@ public class Los_6Metodos {
         Node<T> actual = cabeza;
         while (actual != null) {
             System.out.print(actual.getData());
+            actual = actual.getSiguiente();
+        }
+        System.out.println();
+    
     }
 }
