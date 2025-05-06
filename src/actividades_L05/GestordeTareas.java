@@ -5,15 +5,21 @@ public class GestordeTareas<T> {
 
     private Node<T> cabeza;    // Nodo que representa el inicio de la lista enlazada
 
+    // este es un metodo que agrega una nueva tarea al final de la lista
     public void agregarTarea(T tarea) {
+
+        //// Creamos un nuevo nodo con la tarea y sin siguiente (null)
         Node<T> nuevo = new Node<>(tarea, null);
+
+        //aca si la lista esta vacia el nuevo nodo sera la cabeza, pero sino recorremos hasta el ultuimo nodo
         if (cabeza == null) {
             cabeza = nuevo;
         } else {
             Node<T> actual = cabeza;
-            while (actual.getSiguiente() != null) {
+            while (actual.getSiguiente() != null) {//recorremos hasta el ultimo 
                 actual = actual.getSiguiente();
             }
+            // Al final enlazamos el nuevo nodo como siguiente
             actual.setPrioridad(nuevo);
         }
     }
