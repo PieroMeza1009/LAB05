@@ -8,10 +8,10 @@ public class main {
         // Se crea un gestor para manejar las tareas que ya fueron completadas
         TareasCompletadas<Tarea> completadas = new TareasCompletadas<>();
 
-
-        pendientes.agregarTarea(new Tarea("Estudiar para el examen", 5));
-        pendientes.agregarTarea(new Tarea("Limpiar el cuarto", 2));
-        pendientes.agregarTarea(new Tarea("Hacer tarea de AED", 4));
+        // Aca agregamos  tareas pendientes al gestor
+        pendientes.agregarTarea(new Tarea("Estudiar para el examen", 3));
+        pendientes.agregarTarea(new Tarea("Limpiar el cuarto", 1));
+        pendientes.agregarTarea(new Tarea("Hacer tarea de AED", 2));
 
         System.out.println("Tareas pendientes:");
         pendientes.imprimirTareas();
