@@ -66,5 +66,8 @@ public class Los_6Metodos {
     public static <T> Node<T> concatenarListas(Node<T> lista1, Node<T> lista2) {
         if (lista1 == null) return lista2;
         Node<T> actual = lista1;
+        while (actual.getSiguiente() != null) {
+            actual = actual.getSiguiente();
+        }
     }
 }
