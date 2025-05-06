@@ -62,4 +62,6 @@ public class Los_6Metodos {
         }
         return lista1 == null && lista2 == null; // ambas deben terminar al mismo tiempo
     }
+    ///6. Concatenar dos listas
+    public static <T> Node<T> concatenarListas(Node<T> lista1, Node<T> lista2) {
 }
