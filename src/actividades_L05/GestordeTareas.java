@@ -52,3 +52,8 @@ public class GestordeTareas {
             actual = actual.getSiguiente();
         }
 }
+
+    public int contarTareas() {
+        int contador = 0;
+        Node<T> actual = cabeza;
+    }
