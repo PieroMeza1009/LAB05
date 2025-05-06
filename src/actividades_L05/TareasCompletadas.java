@@ -24,6 +24,15 @@ public class TareasCompletadas<T> {
     public int contarTareasCompletadas() {
         int contador = 0;
         Node<T> actual = cabeza;
+
+        while (actual != null) {
+            contador++;
+            actual = actual.getSiguiente();
+        }
+
+        return contador;
+    }
+
     
     
 }
