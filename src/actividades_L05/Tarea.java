@@ -24,6 +24,15 @@ public class Tarea {
         this.prioridad =prioridad;
     }
 
+    // Usamos esto para comparar tareas facilmente
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Tarea)) return false;
+        Tarea otra = (Tarea) obj;
+        return this.titulo.equals(otra.titulo) && this.prioridad == otra.prioridad;
+    }
+
     public String toString(){
         return this.titulo + " : " + this.prioridad;
     }
