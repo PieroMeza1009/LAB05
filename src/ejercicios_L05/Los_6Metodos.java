@@ -51,4 +51,8 @@ public class Los_6Metodos {
         }
         return contador;
     }
+    ///5. Comparar dos listas
+    public static <T> boolean sonIguales(Node<T> lista1, Node<T> lista2) {
+        
+    }
 }
