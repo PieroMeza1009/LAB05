@@ -25,4 +25,8 @@ public class Los_6Metodos {
         }
         return anterior; // nueva cabeza
     }
+
+    ///3. Insertar un nodo al final
+    public static <T> Node<T> insertarAlFinal(Node<T> cabeza, T valor) {
+        Node<T> nuevo = new Node<>(valor, null);
 }
