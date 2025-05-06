@@ -18,7 +18,10 @@ public class Los_6Metodos {
 
     ///2. Invertir una lista genérica
     public static <T> Node<T> invertirLista(Node<T> cabeza) {
+        
+        // Puntero al nodo anterior, inicia como null
         Node<T> anterior = null;
+         // Nodo actual que se está procesando
         Node<T> actual = cabeza;
 
         while (actual != null) {
