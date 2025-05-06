@@ -1,7 +1,9 @@
 package actividades_L05;
 
+// Declaramos que esta clase es genérica, es decir, puede trabajar con cualquier tipo de objeto <T>
 public class GestordeTareas<T> {
-    private Node<T> cabeza;
+
+    private Node<T> cabeza;    // Nodo que representa el inicio de la lista enlazada
 
     public void agregarTarea(T tarea) {
         Node<T> nuevo = new Node<>(tarea, null);
