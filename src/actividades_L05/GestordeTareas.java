@@ -90,6 +90,7 @@ public class GestordeTareas {
             actual.setPrioridad(anterior);
             anterior = actual;
             actual = siguiente;
+
         }
+            cabeza = anterior;
     }
-    
