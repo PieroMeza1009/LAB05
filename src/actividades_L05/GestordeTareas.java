@@ -23,4 +23,8 @@ public class GestordeTareas {
             cabeza = cabeza.getSiguiente();
             return true;
         }
+        Node<T> actual = cabeza;
+        while (actual.getSiguiente() != null && !actual.getSiguiente().getData().equals(tarea)) {
+            actual = actual.getSiguiente();
+        }
     }
