@@ -62,4 +62,9 @@ public class GestordeTareas {
         }
         return contador;
     }
+
+    public T obtenerTareaMasPrioritaria() {
+        if (cabeza == null) return null;
+        if (!(cabeza.getData() instanceof Tarea)) return null;
+    }
     
