@@ -84,5 +84,12 @@ public class GestordeTareas {
         Node<T> anterior = null;
         Node<T> actual = cabeza;
         Node<T> siguiente;
+
+        while (actual != null) {
+            siguiente = actual.getSiguiente();
+            actual.setPrioridad(anterior);
+            anterior = actual;
+            actual = siguiente;
+        }
     }
     
