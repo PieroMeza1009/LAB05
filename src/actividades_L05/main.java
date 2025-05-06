@@ -17,6 +17,10 @@ public class main {
         if (pendientes.eliminarTarea(tareaTerminada)) {
             completadas.agregarTareaCompletada(tareaTerminada);
         }
+        
+        System.out.println("\nDespués de completar una tarea:");
+        System.out.println("Tareas pendientes:");
+        pendientes.imprimirTareas();
     }
 
 }
