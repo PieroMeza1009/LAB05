@@ -23,6 +23,8 @@ public class Los_6Metodos {
         while (actual != null) {
             Node<T> siguiente = actual.getSiguiente();
             actual.setSiguiente(anterior);
+            anterior = actual;                         // avanzar anterior
+            actual = siguiente;  
 
         }
         return anterior; // nueva cabeza
