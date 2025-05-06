@@ -86,13 +86,16 @@ public class GestordeTareas<T> {
         return contador;
     }
 
+    // este es el metodo que devuelve la tarea con mayor prioridad (si T es una instancia de Tarea)
     public T obtenerTareaMasPrioritaria() {
         if (cabeza == null) return null;
+
+        // Verificamos que los objetos sean instancias de Tarea
         if (!(cabeza.getData() instanceof Tarea)) return null;
 
         Node<T> actual = cabeza;
         Tarea masPrioritaria = (Tarea) actual.getData();
-
+        //recorremos toda la lista y vamos comparando las prioridades
         while (actual != null) {
             Tarea tareaActual = (Tarea) actual.getData();
             if (tareaActual.getPrioridad() < masPrioritaria.getPrioridad()) {
@@ -103,18 +106,20 @@ public class GestordeTareas<T> {
         return (T) masPrioritaria;
     }
 
+    // el metodo que invierte el orden de la lista enlazada
     public void invertirTareas() {
         Node<T> anterior = null;
         Node<T> actual = cabeza;
         Node<T> siguiente;
-
+        // Recorremos y vamos revirtiendo los enlaces
         while (actual != null) {
-            siguiente = actual.getSiguiente();
-            actual.setPrioridad(anterior);
-            anterior = actual;
+            siguiente = actual.getSiguiente(); // Guardamos el siguiente nodo
+            actual.setPrioridad(anterior); ///Revertimos el enlace
+            anterior = actual;   // Avanzamos anterior y actual
             actual = siguiente;
 
         }
+         // Al final, el anterior será la nueva cabeza
             cabeza = anterior;
     }
 }
