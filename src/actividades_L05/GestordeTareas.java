@@ -18,4 +18,9 @@ public class GestordeTareas {
 }
     public boolean eliminarTarea(T tarea) {
         if (cabeza == null) return false;
+        
+        if (cabeza.getData().equals(tarea)) {
+            cabeza = cabeza.getSiguiente();
+            return true;
+        }
     }
