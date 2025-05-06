@@ -2,7 +2,7 @@ package ejercicios_L05;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Node {
+public class Node<T> {
     private T data;
     private Node<T> siguiente;
 
