@@ -2,7 +2,10 @@ package actividades_L05;
 
 public class main {
     public static void main(String[] args) {
+
+        // Se crea un gestor para manejar tareas pendientes de tipo Tarea
         GestordeTareas<Tarea> pendientes = new GestordeTareas<>();
+        // Se crea un gestor para manejar las tareas que ya fueron completadas
         TareasCompletadas<Tarea> completadas = new TareasCompletadas<>();
 
 
