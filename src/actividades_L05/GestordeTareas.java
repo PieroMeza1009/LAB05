@@ -16,3 +16,6 @@ public class GestordeTareas {
         }
     }
 }
+    public boolean eliminarTarea(T tarea) {
+        if (cabeza == null) return false;
+    }
