@@ -34,40 +34,51 @@ public class GestordeTareas<T> {
             cabeza = cabeza.getSiguiente();
             return true;
         }
-
+         // Recorremos la lista buscando la tarea
         Node<T> actual = cabeza;
         while (actual.getSiguiente() != null && !actual.getSiguiente().getData().equals(tarea)) {
             actual = actual.getSiguiente();
         }
 
+          // Si encontramos la tarea, eliminamos el nodo
         if (actual.getSiguiente() != null) {
             actual.setPrioridad(actual.getSiguiente().getSiguiente());
             return true;
         }
-
+        //sino encontramos nada retorna false
         return false;
     
     }
+    //este el em metodo que busca si una tarea existe en la lista
     public boolean contieneTarea(T tarea) {
+
         Node<T> actual = cabeza;
+        //recorremos mientras existan nodos
         while (actual != null) {
+
+            // Si el nodo actual es igual a la tarea, la encontramos
             if (actual.getData().equals(tarea)) return true;
             actual = actual.getSiguiente();
     }
+    //si lo la encontramos bota false
     return false;
 }
-
+    //AAca el metodo que imprime todas las tareas en la lista
     public void imprimirTareas() {
         Node<T> actual = cabeza;
+        
+        //// Recorremos e imprimimos una por una
         while (actual != null) {
             System.out.println(actual.getData());
             actual = actual.getSiguiente();
         }
 }
 
+    //este es el metodo que cuenta cuántas tareas hay en la lista
     public int contarTareas() {
         int contador = 0;
         Node<T> actual = cabeza;
+        //contamos una por una
         while (actual != null) {
             contador++;
             actual = actual.getSiguiente();
