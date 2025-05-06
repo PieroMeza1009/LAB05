@@ -20,6 +20,7 @@ public class TareasCompletadas<T> {
             System.out.println(actual.getData());
             actual = actual.getSiguiente();
         }
+    }
     // por ultimo un metoodo que devuelve cuántas tareas fueron completadas
     public int contarTareasCompletadas() {
         int contador = 0;
@@ -31,8 +32,6 @@ public class TareasCompletadas<T> {
         }
 
         return contador;
+    
     }
-
-    
-    
 }
