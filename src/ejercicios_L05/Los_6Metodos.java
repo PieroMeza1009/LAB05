@@ -25,10 +25,10 @@ public class Los_6Metodos {
         Node<T> actual = cabeza;
 
         while (actual != null) {
-            Node<T> siguiente = actual.getSiguiente();
-            actual.setSiguiente(anterior);
-            anterior = actual;                         // avanzar anterior
-            actual = siguiente;  
+            Node<T> siguiente = actual.getSiguiente();// Guardar referencia al siguiente nodo
+            actual.setSiguiente(anterior);  // Invertir el enlace del nodo actual
+            anterior = actual;                         // avanzar anterior al actual
+            actual = siguiente;  //actual seria el siguiene
 
         }
         return anterior; // nueva cabeza
