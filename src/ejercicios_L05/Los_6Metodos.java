@@ -74,6 +74,8 @@ public class Los_6Metodos {
         actual.setSiguiente(lista2);
         return lista1;
     }
+
+    ///hacia falta un metodo para imprimir las listas
     public static <T> void imprimirLista(Node<T> cabeza) {
         Node<T> actual = cabeza;
         while (actual != null) {
