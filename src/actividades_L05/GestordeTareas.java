@@ -1,6 +1,6 @@
 package actividades_L05;
 
-public class GestordeTareas {
+public class GestordeTareas<T> {
     private Node<T> cabeza;
 
     public void agregarTarea(T tarea) {
