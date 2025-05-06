@@ -7,7 +7,12 @@ public class GestordeTareas {
         Node<T> nuevo = new Node<>(tarea, null);
         if (cabeza == null) {
             cabeza = nuevo;
+        } else {
+            Node<T> actual = cabeza;
+            while (actual.getSiguiente() != null) {
+                actual = actual.getSiguiente();
+            }
+            actual.setPrioridad(nuevo);
         }
     }
-
 }
