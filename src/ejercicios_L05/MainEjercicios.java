@@ -8,8 +8,11 @@ public class MainEjercicios {
         // 1. Buscar un elemento
         System.out.println("¿Contiene 'B'? " + Los_6Metodos.buscarElemento(listaStr, "B"));
         System.out.println("¿Contiene 'Z'? " + Los_6Metodos.buscarElemento(listaStr, "Z"));
-        
-    
+
+        // 2. Invertir una lista
+        Node<String> invertida = Los_6Metodos.invertirLista(listaStr);
+        System.out.print("Lista invertida: ");
+        Los_6Metodos.imprimirLista(invertida);
     }
 
 }
