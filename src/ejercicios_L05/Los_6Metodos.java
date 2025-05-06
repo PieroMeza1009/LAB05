@@ -12,4 +12,9 @@ public class Los_6Metodos {
         return false;
     
     }
+
+    ///2. Invertir una lista genérica
+    public static <T> Node<T> invertirLista(Node<T> cabeza) {
+        Node<T> anterior = null;
+        Node<T> actual = cabeza;
 }
