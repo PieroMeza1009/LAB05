@@ -66,5 +66,11 @@ public class GestordeTareas {
     public T obtenerTareaMasPrioritaria() {
         if (cabeza == null) return null;
         if (!(cabeza.getData() instanceof Tarea)) return null;
+
+        Node<T> actual = cabeza;
+        Tarea masPrioritaria = (Tarea) actual.getData();
+
+        while (actual != null) {
+            Tarea tareaActual = (Tarea) actual.getData();
     }
     
