@@ -10,5 +10,9 @@ public class TareasCompletadas<T> {
         Node<T> nueva = new Node<>(tarea, cabeza);
         cabeza = nueva;
     }
+    // meodo para imprimir todas las tareas completadas
+    public void imprimirTareasCompletadas() {
+        Node<T> actual = cabeza;
+        System.out.println("Tareas completadas:");
     
 }
