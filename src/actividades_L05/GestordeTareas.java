@@ -79,4 +79,10 @@ public class GestordeTareas {
         }
         return (T) masPrioritaria;
     }
+
+    public void invertirTareas() {
+        Node<T> anterior = null;
+        Node<T> actual = cabeza;
+        Node<T> siguiente;
+    }
     
