@@ -14,5 +14,12 @@ public class TareasCompletadas<T> {
     public void imprimirTareasCompletadas() {
         Node<T> actual = cabeza;
         System.out.println("Tareas completadas:");
+
+         // Recorremos e imprimimos
+        while (actual != null) {
+            System.out.println(actual.getData());
+            actual = actual.getSiguiente();
+        }
+    
     
 }
