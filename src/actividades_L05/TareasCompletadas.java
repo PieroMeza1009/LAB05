@@ -20,6 +20,10 @@ public class TareasCompletadas<T> {
             System.out.println(actual.getData());
             actual = actual.getSiguiente();
         }
+    // Método que devuelve cuántas tareas fueron completadas
+    public int contarTareasCompletadas() {
+        int contador = 0;
+        Node<T> actual = cabeza;
     
     
 }
