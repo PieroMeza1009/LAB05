@@ -33,4 +33,8 @@ public class Los_6Metodos {
         if (cabeza == null) {
             return nuevo;
         }
+        Node<T> actual = cabeza;
+        while (actual.getSiguiente() != null) {
+            actual = actual.getSiguiente();
+        }
 }
