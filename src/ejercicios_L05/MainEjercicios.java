@@ -23,6 +23,12 @@ public class MainEjercicios {
         System.out.print("Lista con 3 al final: ");
         Los_6Metodos.imprimirLista(listaNumeros);
 
+        /// 4. Contar nodos
+        System.out.println("Cantidad de nodos: " + Los_6Metodos.contarNodos(listaNumeros));
+
+        ///5.Comparar dos listas
+        
+
 
 
 
