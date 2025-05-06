@@ -19,6 +19,9 @@ public class MainEjercicios {
 
         // 3. Insertar al final
         Node<Integer> listaNumeros = new Node<>(1, new Node<>(2, null));
+        listaNumeros = Los_6Metodos.insertarAlFinal(listaNumeros, 3);
+        System.out.print("Lista con 3 al final: ");
+        Los_6Metodos.imprimirLista(listaNumeros);
 
 
 
