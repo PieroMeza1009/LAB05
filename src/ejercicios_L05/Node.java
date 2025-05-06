@@ -1,4 +1,6 @@
 package ejercicios_L05;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Node {
     private T data;
