@@ -44,3 +44,11 @@ public class GestordeTareas {
     }
     return false;
 }
+
+    public void imprimirTareas() {
+        Node<T> actual = cabeza;
+        while (actual != null) {
+            System.out.println(actual.getData());
+            actual = actual.getSiguiente();
+        }
+}
