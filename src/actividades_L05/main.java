@@ -28,8 +28,9 @@ public class main {
         System.out.println("\nTarea más prioritaria:");
         Tarea masImportante = pendientes.obtenerTareaMasPrioritaria();
         System.out.println(masImportante);
+
+        pendientes.invertirTareas();
+        System.out.println("\nTareas pendientes invertidas:");
+        pendientes.imprimirTareas();
     }
-
-    
-
 }
