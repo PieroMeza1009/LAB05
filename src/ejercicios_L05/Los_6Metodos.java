@@ -44,4 +44,8 @@ public class Los_6Metodos {
     /// 4. Contar los nodos
     public static <T> int contarNodos(Node<T> cabeza) {
         int contador = 0;
+        Node<T> actual = cabeza;
+        while (actual != null) {
+            contador++;
+            actual = actual.getSiguiente();
 }
