@@ -53,6 +53,10 @@ public class Los_6Metodos {
     }
     ///5. Comparar dos listas
     public static <T> boolean sonIguales(Node<T> lista1, Node<T> lista2) {
-        
+        while (lista1 != null && lista2 != null) {
+            if (!lista1.getData().equals(lista2.getData())) {
+                return false;
+            }
+
     }
 }
