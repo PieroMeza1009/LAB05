@@ -36,16 +36,18 @@ public class Los_6Metodos {
 
     ///3. Insertar un nodo al final
     public static <T> Node<T> insertarAlFinal(Node<T> cabeza, T valor) {
-        Node<T> nuevo = new Node<>(valor, null);
+        Node<T> nuevo = new Node<>(valor, null); // Crea un nuevo nodo con el valor dado
 
+        //si la lista esta vacia el nuevo nodo sera la cabeza
         if (cabeza == null) {
             return nuevo;
         }
         Node<T> actual = cabeza;
+        //recorremos hasta el ultimo nodo
         while (actual.getSiguiente() != null) {
             actual = actual.getSiguiente();
         }
-        actual.setSiguiente(nuevo);
+        actual.setSiguiente(nuevo);// Enlaza el nuevo nodo al final de la lista
         return cabeza;
     }
 
