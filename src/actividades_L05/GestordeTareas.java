@@ -42,3 +42,5 @@ public class GestordeTareas {
             if (actual.getData().equals(tarea)) return true;
             actual = actual.getSiguiente();
     }
+    return false;
+}
