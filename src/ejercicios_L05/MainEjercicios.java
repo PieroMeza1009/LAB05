@@ -36,12 +36,8 @@ public class MainEjercicios {
         /// 6. Concatenar dos listas
         Node<String> listaX = new Node<>("Hola", null);
         Node<String> listaY = new Node<>("Mundo", null);
-        Node<String> listaConcat = UtilidadesListas.concatenarListas(listaX, listaY);
-        
-
-
-
-
+        Node<String> listaConcat = Los_6Metodos.concatenarListas(listaX, listaY);
+        System.out.print("Lista concatenada: ");
+        Los_6Metodos.imprimirLista(listaConcat);
     }
-
 }
