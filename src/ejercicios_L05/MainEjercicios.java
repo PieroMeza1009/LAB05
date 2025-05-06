@@ -27,6 +27,9 @@ public class MainEjercicios {
         System.out.println("Cantidad de nodos: " + Los_6Metodos.contarNodos(listaNumeros));
 
         ///5.Comparar dos listas
+        Node<Integer> listaA = new Node<>(1, new Node<>(2, new Node<>(3, null)));
+        Node<Integer> listaB = new Node<>(1, new Node<>(2, new Node<>(3, null)));
+        Node<Integer> listaC = new Node<>(1, new Node<>(4, null));
         
 
 
