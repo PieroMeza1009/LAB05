@@ -55,22 +55,23 @@ public class Los_6Metodos {
     public static <T> int contarNodos(Node<T> cabeza) {
         int contador = 0;
         Node<T> actual = cabeza;
+        //mientras haya nodos, aumenta el contador 
         while (actual != null) {
             contador++;
             actual = actual.getSiguiente();
         }
-        return contador;
+        return contador;//aca damos el total de nodos
     }
     ///5. Comparar dos listas
     public static <T> boolean sonIguales(Node<T> lista1, Node<T> lista2) {
-        while (lista1 != null && lista2 != null) {
+        while (lista1 != null && lista2 != null) { //recorremos ambas listas 
             if (!lista1.getData().equals(lista2.getData())) {
                 return false;
             }
-            lista1 = lista1.getSiguiente();
-            lista2 = lista2.getSiguiente();
+            lista1 = lista1.getSiguiente(); 
+            lista2 = lista2.getSiguiente(); 
         }
-        return lista1 == null && lista2 == null; // ambas deben terminar al mismo tiempo
+        return lista1 == null && lista2 == null; // ambas deben terminar al mismo tiempo para qye sean iguales 
     }
     ///6. Concatenar dos listas
     public static <T> Node<T> concatenarListas(Node<T> lista1, Node<T> lista2) {
@@ -79,18 +80,18 @@ public class Los_6Metodos {
         while (actual.getSiguiente() != null) {
             actual = actual.getSiguiente();
         }
-        actual.setSiguiente(lista2);
-        return lista1;
+        actual.setSiguiente(lista2);// Enlaza el ultimo nodo de la primera lista con la segunda lista
+        return lista1; ///devuelve la lista concatenada que empieza desde la cabeza de la primera 
     }
 
     ///hacia falta un metodo para imprimir las listas
     public static <T> void imprimirLista(Node<T> cabeza) {
         Node<T> actual = cabeza;
-        while (actual != null) {
+        while (actual != null) { //mientras haya nodos 
             System.out.print(actual.getData());
             actual = actual.getSiguiente();
         }
-        System.out.println();
+        System.out.println();// Salto de línea después de imprimir la lista
     
     }
 }
