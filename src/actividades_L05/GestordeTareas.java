@@ -56,4 +56,10 @@ public class GestordeTareas {
     public int contarTareas() {
         int contador = 0;
         Node<T> actual = cabeza;
+        while (actual != null) {
+            contador++;
+            actual = actual.getSiguiente();
+        }
+        return contador;
     }
+    
