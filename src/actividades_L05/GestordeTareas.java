@@ -23,14 +23,18 @@ public class GestordeTareas<T> {
             actual.setPrioridad(nuevo);
         }
     }
-}
+
+
+    // este es el metodo que elimina una tarea si existe
     public boolean eliminarTarea(T tarea) {
-        if (cabeza == null) return false;
+        if (cabeza == null) return false; //si esta vacia no eliminamos nada
         
+        //aca si la tarea a eliminar esta en la cabeza la movemos al siguiente nodo
         if (cabeza.getData().equals(tarea)) {
             cabeza = cabeza.getSiguiente();
             return true;
         }
+
         Node<T> actual = cabeza;
         while (actual.getSiguiente() != null && !actual.getSiguiente().getData().equals(tarea)) {
             actual = actual.getSiguiente();
@@ -102,3 +106,4 @@ public class GestordeTareas<T> {
         }
             cabeza = anterior;
     }
+}
