@@ -69,5 +69,7 @@ public class Los_6Metodos {
         while (actual.getSiguiente() != null) {
             actual = actual.getSiguiente();
         }
+        actual.setSiguiente(lista2);
+        return lista1;
     }
 }
