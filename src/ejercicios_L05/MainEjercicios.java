@@ -30,6 +30,8 @@ public class MainEjercicios {
         Node<Integer> listaA = new Node<>(1, new Node<>(2, new Node<>(3, null)));
         Node<Integer> listaB = new Node<>(1, new Node<>(2, new Node<>(3, null)));
         Node<Integer> listaC = new Node<>(1, new Node<>(4, null));
+        System.out.println("listaA y listaB iguales: " + Los_6Metodos.sonIguales(listaA, listaB));
+        System.out.println("listaA y listaC iguales: " + Los_6Metodos.sonIguales(listaA, listaC));
         
 
 
