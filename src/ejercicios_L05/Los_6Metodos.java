@@ -37,4 +37,11 @@ public class Los_6Metodos {
         while (actual.getSiguiente() != null) {
             actual = actual.getSiguiente();
         }
+        actual.setSiguiente(nuevo);
+        return cabeza;
+    }
+
+    /// 4. Contar los nodos
+    public static <T> int contarNodos(Node<T> cabeza) {
+        int contador = 0;
 }
