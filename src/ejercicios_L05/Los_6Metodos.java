@@ -76,4 +76,7 @@ public class Los_6Metodos {
     }
     public static <T> void imprimirLista(Node<T> cabeza) {
         Node<T> actual = cabeza;
+        while (actual != null) {
+            System.out.print(actual.getData());
+    }
 }
