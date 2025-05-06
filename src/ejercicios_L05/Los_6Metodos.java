@@ -60,6 +60,6 @@ public class Los_6Metodos {
             lista1 = lista1.getSiguiente();
             lista2 = lista2.getSiguiente();
         }
-
+        return lista1 == null && lista2 == null; // ambas deben terminar al mismo tiempo
     }
 }
