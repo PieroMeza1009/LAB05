@@ -8,4 +8,13 @@ public class Node {
         this.data = data;
         this.siguiente = siguiente;
     }
+
+    public T getData() {
+        return data;
+    }
+
+    public Node<T> getSiguiente() {
+        return siguiente;
+    }
+
 }
